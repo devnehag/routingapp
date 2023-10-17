@@ -1,0 +1,10 @@
+<h2>About Page</h2>
+<button (click)="toggleDisplayComponent()">bob/susan</button>
+<div *ngIf="displayBob">
+  <app-bob></app-bob>
+</div>
+<div *ngIf="!displayBob">
+  <app-susan></app-susan>
+</div>
+
+<router-outlet></router-outlet>
